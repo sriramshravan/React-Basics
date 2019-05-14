@@ -1,5 +1,5 @@
 import React from "react";
-const updatedComponent = (OriginalComponent, incrementNumber) => {
+const withCounter = (OriginalComponent, incrementNumber) => {
   class NewComponent extends React.Component {
     constructor(props) {
       super(props);
@@ -25,4 +25,4 @@ const updatedComponent = (OriginalComponent, incrementNumber) => {
   return NewComponent;
 };
 
-export default updatedComponent;
+export default withCounter;
